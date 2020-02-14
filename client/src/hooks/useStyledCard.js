@@ -13,7 +13,7 @@ const useStyledCard = (initialPlayer = {}) => {
         </div>
     )
 
-    const PlayerCard1 = styled(JSON.parse(Card))`
+    const PlayerCard1 = styled(Card)`
         font-size: 1.2rem;
         color: white;
         background: black;

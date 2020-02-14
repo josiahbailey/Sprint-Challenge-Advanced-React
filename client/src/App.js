@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios'
-import PlayerCard from './components/PlayerList'
 import PlayerList from './components/PlayerList';
 
 class App extends React.Component {

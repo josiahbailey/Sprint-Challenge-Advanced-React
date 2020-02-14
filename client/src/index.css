@@ -26,3 +26,10 @@ code {
   width: 20%;
   margin: 2%;
 }
+
+.dark-mode {
+  background: #222831;
+  border: 1px solid #393e46;
+  color: white;
+  position: relative;
+}
