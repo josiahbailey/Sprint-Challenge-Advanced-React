@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'
 
-const useStyledCard = (int, initialPlayer = {}) => {
+const useStyledCard = (initialPlayer = {}) => {
     const [player, setPlayer] = useState(initialPlayer)
     const { name, country, searches} = player
 
@@ -37,7 +37,7 @@ const useStyledCard = (int, initialPlayer = {}) => {
         border-radius: 15px;
     `
 
-    const checkStyle = () => {
+    const checkStyle = int => {
         if (int === 1) {
             return PlayerCard1
         } else if (int === 2) {
@@ -53,7 +53,7 @@ const useStyledCard = (int, initialPlayer = {}) => {
         setPlayer(value)
     }
 
-    return [checkStyle(int), PlayerSetter]
+    return [checkStyle, PlayerSetter]
 }
  
 export default useStyledCard;
