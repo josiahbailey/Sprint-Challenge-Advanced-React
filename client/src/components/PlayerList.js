@@ -11,7 +11,7 @@ const PlayerList = ({players}) => {
             <nav>
                 <button onClick={e => setMode()}>Mode</button>
             </nav>
-            <div className='list'>
+            <div data-testid='list' className='list'>
                 {players.map(player => (
                     <PlayerCard key={player.id} player={player}/>
                 ))}
